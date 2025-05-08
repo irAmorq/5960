@@ -5,9 +5,9 @@ import os
 TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    keyboard = [[InlineKeyboardButton("باز کردن لینک", url="https://example.com")]]
+    keyboard = [[InlineKeyboardButton("OPEN SIXP", url="https://t.me/Sixp_robot/SIXP")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await update.message.reply_text("خوش آمدید! روی دکمه زیر کلیک کنید:", reply_markup=reply_markup)
+    await update.message.reply_text("Hi welcome to $SIXP Bot This robot is fake. The creator's ID is inside the robot", reply_markup=reply_markup)
 
 if __name__ == "__main__":
     app = Application.builder().token(TOKEN).build()
